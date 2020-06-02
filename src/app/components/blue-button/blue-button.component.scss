@@ -1,0 +1,51 @@
+@import '../../../colors.scss';
+
+.blue-btn {
+  background: $blue;
+  border-radius: 4px;
+  padding: 8px 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 0;
+  letter-spacing: -.0027em;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $main-bg;
+  cursor: pointer;
+
+  &--empty {
+    color: #907CFF;
+    background: inherit;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    &:hover {
+      background: inherit !important;
+    }
+  }
+
+  &--span {
+    font-size: inherit !important;
+    font-family: inherit;
+  }
+
+  &_text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-hover;
+    opacity: 0.68;
+    color: $activeColor;
+  }
+}
